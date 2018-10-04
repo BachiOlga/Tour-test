@@ -12,6 +12,17 @@
     text-transform: uppercase;
     font-size: 14px;
 
+    @include medium {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    @include small {
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+    }
 }
 
 // .main__date {
@@ -53,6 +64,16 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+    @include medium {
+        flex-direction: column;
+    }
+
+    @include small {
+        display: none;
+    }
+
+
 }
 
 .main__card {
@@ -103,11 +124,23 @@
 .main__card-next {
     margin-left: 100px;
     margin-right: 100px;
+
+    @include medium {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 .main__card-next-w {
     margin-left: 50px;
     margin-right: 40px;
+
+}
+
+.main__card-w {
+    @include medium {
+        margin-top: 20px;
+    }
 }
 
 .main__card-item {

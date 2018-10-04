@@ -1,5 +1,6 @@
 .header {
     background-color: rgba(0, 28, 32, .75);
+
 }
 
 .header-container {
@@ -11,12 +12,26 @@
 .header__logo {
     padding-top: 15px;
     padding-bottom: 15px;
+
+    @include small {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 
 .header__menu-list {
     display: flex;
     justify-content: space-between;
+    padding: 0;
 
+    @include small {
+        display: none;
+    }
+}
+
+// burger
+.header__menu-icon {
+    display: none;
 
 }
 
@@ -53,6 +68,14 @@
 
 .header__menu-pop-up-title {
     margin: 0;
+
+    &--left {
+        border-top-left-radius: 10px;
+    }
+
+    &--right {
+        border-top-right-radius: 10px;
+    }
 }
 
 .header__menu-pop-up-list {
@@ -62,9 +85,17 @@
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
+
+    &--left {
+        border-bottom-left-radius: 10px;
+    }
+
+    &--right {
+        border-bottom-right-radius: 10px;
+    }
 }
 
-.header__menu-pop-up-list-right {
+.header__menu-pop-up-list--right {
 
     padding-left: 20px;
     padding-right: 70px;
