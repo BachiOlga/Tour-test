@@ -33,6 +33,10 @@
 .header__menu-icon {
     display: none;
 
+    @include small {
+        display: block;
+        z-index: 99;
+    }
 }
 
 .header__menu-item {
