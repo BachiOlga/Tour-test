@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin-right: 200px;
 
     @include small {
         display: none;
@@ -41,6 +42,7 @@
 
 .header__menu-item {
     margin-left: 30px;
+    position: relative;
 
 }
 
@@ -62,6 +64,9 @@
 
 .header__menu-pop-up {
     display: flex;
+    position: absolute;
+    top: 85px;
+    right: 480px;
 
 }
 
@@ -107,9 +112,9 @@
 }
 
 .header__menu-pop-up-item:not(:first-child) {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .header__menu-pop-up {
-    display: none;
+    // display: none;
 }
