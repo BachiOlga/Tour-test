@@ -1,6 +1,6 @@
 (() => {
     const menus = document.querySelectorAll('.header__menu-item');
-    const popups = document.querySelectorAll('header__menu-pop-up');
+    const popups = document.querySelectorAll('.header__menu-pop-up');
     
 
     menus.forEach((item, i) =>{
