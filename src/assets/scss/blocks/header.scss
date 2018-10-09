@@ -117,7 +117,9 @@
 
 .header__menu-pop-up {
     // display: none;
-    
+    // height: 0;
+    // opacity: 0;
+    // transition: all 0.5s ease-in;
 }
 .header__menu-pop-up--open {
     opacity: 1;
